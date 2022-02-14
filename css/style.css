@@ -1,3 +1,12 @@
+@keyframes soft-appearance {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
 html {
     --shadow-color-var: lightgrey;
     --border-color-var: black;
@@ -7,10 +16,12 @@ html {
     background-color: var(--background-color-var);
     background-repeat: repeat;
     background-image: url("/assets/background.png");
+    animation: soft-appearance 0.5s ease-in 1;
 }
 
 *:not(select):not(option) {
     color: var(--text-color-var);
+
 }
 
 ul {
@@ -29,10 +40,9 @@ main {
     flex-wrap: wrap;
 }
 
-@media (max-width: 600px) {
-    .upper-nav-wrapper, header, footer, main {
-        flex: 1 100%;
-    }
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .datablock::before {
@@ -59,6 +69,10 @@ main {
     overflow: hidden;
 }
 
+.datablock > .datablock {
+    border: var(--border-color-var) solid 1px;
+}
+
 img {
     border-radius: 5px;
     width: 75%;
@@ -70,9 +84,9 @@ img {
     box-shadow: none;
 }
 
-.main-container {
-    display: flex;
-    flex-wrap: wrap;
+.upper-nav__title {
+    font-size: 200%;
+    margin-left: 15px;
 }
 
 .upper-nav {
@@ -85,11 +99,10 @@ img {
     border-right: none;
 }
 
-.upper-nav__title {
-    font-size: 200%;
-    margin-left: 15px;
+@media (max-width: 600px) {
+    .upper-nav-wrapper, header, footer, main {
+        flex: 1 100%;
+    }
 }
 
-.datablock > .datablock {
-    border: var(--border-color-var) solid 1px;
-}
+
