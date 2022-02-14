@@ -7,16 +7,13 @@ const themes = {
         '--background-opacity-var': 'rgba(255,255,255, .43)'
     },
     'dark': {
+        '--background-color-var': '#0d1117',
+        '--background-opacity-var': 'rgba(0,0,0, .33)',
         '--shadow-color-var': '#0d1117',
         '--border-color-var': 'aliceblue',
-        '--background-color-var': '#0d1117',
-        '--text-color-var': 'white',
-        '--background-opacity-var': 'rgba(0,0,0, .33)'
+        '--text-color-var': 'white'
     }
 };
-// расчет текущего возраста
-let difference = new Date() - new Date("2004/03/07");
-document.getElementById("current-age").innerText = Math.floor(difference / 1000 / 60 / 24 / 365 / 60).toString();
 // установка ключа в localStorage для корректной смены темы
 const themeSelector = document.getElementById("theme");
 let oldTheme = localStorage.getItem("my_page_theme");
@@ -27,6 +24,11 @@ if (oldTheme === null) {
 themeSelector.addEventListener("change", changeTheme);
 themeSelector.value = oldTheme;
 themeSelector.dispatchEvent(new Event("change")); //смена стандартной темы на тему из localStorage
+
+// расчет текущего возраста
+let difference = new Date() - new Date("2004/03/07");
+document.getElementById("current-age").innerText = Math.floor(difference / 1000 / 60 / 24 / 365 / 60).toString();
+
 
 function changeTheme() {
     let currentTheme = themeSelector.value;
