@@ -17,6 +17,7 @@ html {
     background-repeat: repeat;
     background-image: url("/assets/background.png");
     animation: soft-appearance 0.5s ease-in 1;
+    animation-delay: 250ms;
 }
 
 *:not(select):not(option) {
@@ -104,5 +105,3 @@ img {
         flex: 1 100%;
     }
 }
-
-
