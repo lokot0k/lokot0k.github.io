@@ -16,12 +16,11 @@ html {
     background-color: var(--background-color-var);
     background-repeat: repeat;
     background-image: url("/assets/background.png");
-    animation: soft-appearance 0.5s ease-in 1;
 }
 
 *:not(select):not(option) {
     color: var(--text-color-var);
-
+    animation: soft-appearance 0.5s linear 1;
 }
 
 ul {
@@ -30,14 +29,12 @@ ul {
     margin-right: 35px;
 }
 
-header, footer {
-    flex-wrap: wrap;
+header {
     flex: 2;
 }
 
 main {
     flex: 3;
-    flex-wrap: wrap;
 }
 
 .main-container {
