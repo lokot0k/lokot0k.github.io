@@ -20,6 +20,9 @@ html {
 
 *:not(select):not(option) {
     color: var(--text-color-var);
+}
+
+body {
     animation: soft-appearance 0.5s linear 1;
 }
 

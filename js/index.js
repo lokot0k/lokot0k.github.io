@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
 let difference = new Date() - new Date("2004/03/07");
 document.getElementById("current-age").innerText = Math.floor(difference / 1000 / 60 / 24 / 365 / 60).toString();
 
-
 function changeTheme() {
     let currentTheme = themeSelector.value;
     localStorage.setItem("my_page_theme", currentTheme);
@@ -40,5 +39,5 @@ function changeTheme() {
     const themeSettings = themes[currentTheme];
     Object.keys(themeSettings).forEach((key) => {
         htmlThemes.style.setProperty(key, themeSettings[key]);
-    })
+    });
 }
