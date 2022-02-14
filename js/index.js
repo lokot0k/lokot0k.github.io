@@ -16,14 +16,17 @@ const themes = {
 };
 // установка ключа в localStorage для корректной смены темы
 const themeSelector = document.getElementById("theme");
-let oldTheme = localStorage.getItem("my_page_theme");
-if (oldTheme === null) {
-    oldTheme = themeSelector.value;
-    localStorage.setItem("my_page_theme", themeSelector.value);
-}
-themeSelector.addEventListener("change", changeTheme);
-themeSelector.value = oldTheme;
-themeSelector.dispatchEvent(new Event("change")); //смена стандартной темы на тему из localStorage
+
+document.addEventListener('DOMContentLoaded', function () {
+    let oldTheme = localStorage.getItem("my_page_theme");
+    if (oldTheme === null) {
+        oldTheme = themeSelector.value;
+        localStorage.setItem("my_page_theme", themeSelector.value);
+    }
+    themeSelector.addEventListener("change", changeTheme);
+    themeSelector.value = oldTheme;
+    themeSelector.dispatchEvent(new Event("change")); //смена стандартной темы на тему из localStorage
+}, false);
 
 // расчет текущего возраста
 let difference = new Date() - new Date("2004/03/07");
