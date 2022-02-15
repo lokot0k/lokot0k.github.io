@@ -4,29 +4,30 @@ const themes = {
         '--border-color-var': 'black',
         '--background-color-var': 'white',
         '--text-color-var': 'black',
-        '--background-opacity-var': 'rgba(255,255,255, .43)'
+        '--background-opacity-var': 'rgba(255,255,255, .33)',
+        '--background-image-var': 'url("/assets/background-1.jpg")'
     },
     'dark': {
         '--background-color-var': '#0d1117',
-        '--background-opacity-var': 'rgba(0,0,0, .33)',
+        '--background-opacity-var': 'rgba(0,0,0, .13)',
         '--shadow-color-var': '#0d1117',
         '--border-color-var': 'aliceblue',
-        '--text-color-var': 'white'
+        '--text-color-var': 'white',
+        '--background-image-var': 'url("/assets/background-2.png")'
     }
 };
 // установка ключа в localStorage для корректной смены темы
 const themeSelector = document.getElementById("theme");
 
-document.addEventListener('DOMContentLoaded', function () {
-    let oldTheme = localStorage.getItem("my_page_theme");
-    if (oldTheme === null) {
-        oldTheme = themeSelector.value;
-        localStorage.setItem("my_page_theme", themeSelector.value);
-    }
-    themeSelector.addEventListener("change", changeTheme);
-    themeSelector.value = oldTheme;
-    themeSelector.dispatchEvent(new Event("change")); //смена стандартной темы на тему из localStorage
-}, false);
+let oldTheme = localStorage.getItem("my_page_theme");
+if (oldTheme === null) {
+    oldTheme = themeSelector.value;
+    localStorage.setItem("my_page_theme", themeSelector.value);
+}
+themeSelector.addEventListener("change", changeTheme);
+themeSelector.value = oldTheme;
+themeSelector.dispatchEvent(new Event("change")); //смена стандартной темы на тему из localStorage
+
 
 // расчет текущего возраста
 let difference = new Date() - new Date("2004/03/07");

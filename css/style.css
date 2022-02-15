@@ -11,11 +11,12 @@ html {
     --shadow-color-var: lightgrey;
     --border-color-var: black;
     --background-color-var: white;
-    --text-color-var: black;
+    --text-color-var: white;
+    --background-image-var: url("/assets/background-1.jpg");
     --background-opacity-var: rgba(255, 255, 255, .4);
     background-color: var(--background-color-var);
-    background-repeat: repeat;
-    background-image: url("/assets/background.png");
+    background-repeat: no-repeat;
+    background-image: var(--background-image-var);
 }
 
 *:not(select):not(option) {
@@ -24,6 +25,7 @@ html {
 
 body {
     animation: soft-appearance 0.5s linear 1;
+    font-family: 'Press Start 2P', cursive;
 }
 
 ul {
@@ -46,7 +48,6 @@ main {
 }
 
 .datablock::before {
-    content: '';
     position: absolute;
     top: 0;
     right: 0;
@@ -63,7 +64,7 @@ main {
     backdrop-filter: blur(5px);
     position: relative;
     background: var(--background-opacity-var);
-    font-family: 'Lora', serif;
+    /*font-family: 'Lora', serif;*/
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(255, 255, 255, .04);
     overflow: hidden;
