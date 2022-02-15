@@ -12,8 +12,8 @@ html {
     --border-color-var: black;
     --background-color-var: white;
     --text-color-var: white;
-    --background-image-var: url("/assets/background-light.jpg");
     --background-opacity-var: rgba(255, 255, 255, .4);
+    --background-image-var: url("/assets/background-light.jpg");
     background-color: var(--background-color-var);
     background-repeat: no-repeat;
     background-image: var(--background-image-var);
