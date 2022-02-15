@@ -17,6 +17,9 @@ html {
     background-color: var(--background-color-var);
     background-repeat: no-repeat;
     background-image: var(--background-image-var);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 *:not(select):not(option) {
