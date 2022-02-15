@@ -12,7 +12,7 @@ html {
     --border-color-var: black;
     --background-color-var: white;
     --text-color-var: white;
-    --background-image-var: url("/assets/background-1.jpg");
+    --background-image-var: url("/assets/background-light.jpg");
     --background-opacity-var: rgba(255, 255, 255, .4);
     background-color: var(--background-color-var);
     background-repeat: no-repeat;
@@ -50,7 +50,7 @@ main {
     flex-wrap: wrap;
 }
 
-.datablock::before {
+.decor::before {
     position: absolute;
     top: 0;
     right: 0;
@@ -60,20 +60,19 @@ main {
     z-index: -1;
 }
 
-.datablock:not(.upper-nav-wrapper):not(select) {
+.decor:not(.service-wrapper):not(select) {
     padding: 6px;
     margin: 6px;
     text-align: center;
     backdrop-filter: blur(5px);
     position: relative;
     background: var(--background-opacity-var);
-    /*font-family: 'Lora', serif;*/
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(255, 255, 255, .04);
     overflow: hidden;
 }
 
-.datablock > .datablock {
+.decor > .decor {
     border: var(--border-color-var) solid 1px;
 }
 
@@ -83,17 +82,17 @@ img {
     height: 75%;
 }
 
-.upper-nav-wrapper {
+.service-wrapper {
     border: none;
     box-shadow: none;
 }
 
-.upper-nav__title {
+.service__title {
     font-size: 200%;
     margin-left: 15px;
 }
 
-.upper-nav {
+.service {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -108,7 +107,11 @@ img {
         background-attachment: scroll;
     }
 
-    .upper-nav-wrapper, header, main {
+    main {
         flex: 1 100%;
     }
+}
+
+address, .decor {
+    line-height: 25px;
 }
