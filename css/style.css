@@ -104,7 +104,11 @@ img {
 }
 
 @media (max-width: 600px) {
-    .upper-nav-wrapper, header, footer, main {
+    html {
+        background-attachment: scroll;
+    }
+
+    .upper-nav-wrapper, header, main {
         flex: 1 100%;
     }
 }
