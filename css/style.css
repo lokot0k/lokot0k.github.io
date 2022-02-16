@@ -27,6 +27,7 @@ html {
 }
 
 body {
+    margin-left: 0;
     animation: soft-appearance 0.5s linear 1;
     font-family: 'Press Start 2P', cursive;
 }
@@ -43,6 +44,10 @@ header {
 
 main {
     flex: 3;
+}
+
+aside {
+    flex: 2;
 }
 
 .main-container {
@@ -87,11 +92,6 @@ img {
     box-shadow: none;
 }
 
-.service__title {
-    font-size: 200%;
-    margin-left: 15px;
-}
-
 .service {
     display: flex;
     flex-wrap: wrap;
@@ -102,16 +102,35 @@ img {
     border-right: none;
 }
 
-@media (max-width: 600px) {
+.service__title {
+    font-size: 200%;
+    margin-left: 15px;
+}
+
+.service__title > a {
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
     html {
         background-attachment: scroll;
     }
 
-    main {
+    header, main, aside {
         flex: 1 100%;
     }
 }
 
 address, .decor {
     line-height: 25px;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 15px 0 0;
+    background-color: grey;
 }

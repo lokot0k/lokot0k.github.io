@@ -1,3 +1,4 @@
+// colors of themes
 const themes = {
     'light': {
         '--shadow-color-var': 'lightgrey',
@@ -17,6 +18,7 @@ const themes = {
     }
 };
 
+// function for changing theme by changing css properties
 function changeTheme() {
     const currentTheme = themeSelector.value;
     localStorage.setItem("my_page_theme", currentTheme);
@@ -29,7 +31,7 @@ function changeTheme() {
 
 const themeSelector = document.getElementById("theme");
 
-// setting key in localStorage for correct theme change
+// setting key in localStorage for correct theme changing
 let oldTheme = localStorage.getItem("my_page_theme");
 if (oldTheme === null) {
     oldTheme = themeSelector.value;
