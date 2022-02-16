@@ -5,7 +5,7 @@ function setAge() {
 }
 
 //setting random fumo image using "api-fumo.herokuapp.com"
-const randomFumoRoute = "http://api-fumo.herokuapp.com/";
+const randomFumoRoute = "https://api-fumo.herokuapp.com/";
 // empty fumoImage src for not "blinking" with default image
 document.getElementById("fumoImage").src = "";
 
