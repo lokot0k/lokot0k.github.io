@@ -3,18 +3,16 @@ const themes = {
     'light': {
         '--shadow-color-var': 'lightgrey',
         '--border-color-var': 'black',
-        '--background-color-var': 'white',
+        '--background-color-var': '#bcd6f3',
         '--text-color-var': 'black',
         '--background-opacity-var': 'rgba(255,255,255, .33)',
-        '--background-image-var': 'url("/assets/background-light.jpg")'
     },
     'dark': {
         '--shadow-color-var': '#0d1117',
         '--border-color-var': 'aliceblue',
-        '--background-color-var': '#0d1117',
+        '--background-color-var': '#3f4046',
         '--text-color-var': 'white',
         '--background-opacity-var': 'rgba(0,0,0, .13)',
-        '--background-image-var': 'url("/assets/background-dark.png")'
     }
 };
 

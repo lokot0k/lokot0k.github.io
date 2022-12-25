@@ -1,19 +1,20 @@
+<!-- TODO: Uncomment appropriate information after holidays-->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <title>Моя страничка</title>
+    <title>Дружелюбная страничка</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="../js/themeChanger.js"></script>
 </head>
 <body>
 <div class="service-wrapper">
     <nav class="service">
-        <span class="service__title"><a href=""><b>Моя страничка</b></a></span>
-        <div class="decor">
+        <div class="decor_nav">
             <a href="en.html">Eng</a>/<a href="ru.html">Ru</a>
             <label for="theme">Тема:</label>
             <select name="theme" id="theme">
@@ -35,6 +36,8 @@
                     <ul>
                         <li><a href="https://github.com/lokot0k">Гитхаб</a></li>
                         <li><a href="https://t.me/lokot0k">Телеграм</a></li>
+                        <li><a href="https://quietplace.xyz/@lokot0k">Мастадон</a></li>
+
                     </ul>
                 </address>
             </section>
@@ -43,36 +46,39 @@
     <main>
         <section class="decor">
             <h3>Привет!</h3>
-            <p>Меня зовут Иван Королев<br/>
-                Сейчас мне <span id="current-age">17</span> лет
+            <p>Я Локоток<br/>
+                Сейчас мне <span id="current-age">~18</span> лет
             </p>
         </section>
         <section class="decor">
             <h3>Кто я такой?</h3>
             <p class="decor">
                 Студент РТУ МИРЭА</p>
-            <p class="decor">Кодер</p>
-            <p class="decor"><a href="https://shikimori.one/KapToIIIe4Ka">Аниме-адепт</a></p>
+            <p class="decor">Погромист</p>
+            <p class="decor"><a href="https://shikimori.one/KapToIIIe4Ka">Любитель японской анимации</a></p>
         </section>
         <section class="decor">
-            <h3>Возможно скоро здесь появится что-то еще!</h3>
+            <h3>Чем я сейчас занимаюсь?</h3>
+            <p class="decor">Читаю и решаю SiCP</p>
+            <p class="decor">Пытаюсь разобраться в алгоритмах и структурах данных</p>
+            <!--<p class="decor">Работаю в Гринатоме</p>-->
         </section>
+
     </main>
-    <aside class="decor">
-        <figure>
-            <img src="/assets/defaultFumo.png" alt="Картинка с Фумо" id="fumoImage">
-            <figcaption>
-                Случайная картинка с фумо
-            </figcaption>
-        </figure>
+    <aside>
+        <section class="decor">
+            <h3>Еще что-то?</h3>
+            <p class="decor">Пью много чая</p>
+            <p class="decor">Слушаю много музыки и не скуплюсь на аудиотехнику</p>
+            <!--<p class="decor">С недавних пор не играю в игры (ну или совсем чуточку)</p> -->
+        </section>
+        <footer class="decor">
+            <h3>Внимание!</h3>
+            <p>
+                Это дружелюбная страничка! Со всеми деловыми предложениями просьба пройти <a href="-">сюда</a>!
+            </p>
+        </footer>
     </aside>
 </div>
-<footer>
-    <p>
-        <a href="https://github.com/lokot0k?tab=repositories">Мои репы.</a> Свободно вносите улучшения!
-    </p>
-</footer>
-<script src="/js/themeChanger.js"></script>
-<script src="/js/contentSet.js"></script>
 </body>
 </html>
