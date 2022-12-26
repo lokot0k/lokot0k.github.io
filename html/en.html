@@ -1,23 +1,24 @@
+<!-- TODO: Uncomment appropriate information after holidays-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <title>My page</title>
+    <title>Page for friends</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="../js/themeChanger.js"></script>
 </head>
 <body>
 <div class="service-wrapper">
     <nav class="service">
-        <span class="service__title"><a href=""><b>My page</b></a></span>
-        <div class="decor">
+        <div class="decor_nav">
             <a href="en.html">Eng</a>/<a href="ru.html">Ru</a>
             <label for="theme">Theme:</label>
             <select name="theme" id="theme">
-                <option value="light">Light</option>
+                <option value="light">Bright</option>
                 <option value="dark">Dark</option>
             </select>
         </div>
@@ -30,11 +31,13 @@
                 <img src="../assets/avatar.png" alt="">
             </figure>
             <section class="decor">
-                <h3>How you can find me:</h3>
+                <h3>Where you can find me:</h3>
                 <address>
                     <ul>
                         <li><a href="https://github.com/lokot0k">Github</a></li>
                         <li><a href="https://t.me/lokot0k">Telegram</a></li>
+                        <li><a href="https://quietplace.xyz/@lokot0k">Mastadon</a></li>
+
                     </ul>
                 </address>
             </section>
@@ -42,37 +45,40 @@
     </header>
     <main>
         <section class="decor">
-            <h3>Hello!</h3>
-            <p>My name is Ivan Korolev<br/>
-                Currently I'm <span id="current-age">~18</span> years old
+            <h3>Hi!</h3>
+            <p>I'm lokot0k<br/>
+                Currently  I'm <span id="current-age">~18</span> years old
             </p>
         </section>
         <section class="decor">
             <h3>Who am I?</h3>
             <p class="decor">
-                Student of RTU MIREA</p>
-            <p class="decor">Coder</p>
-            <p class="decor"><a href="https://shikimori.one/KapToIIIe4Ka">Anime-crackhead</a></p>
+                RTU MIREA's undergrad</p>
+            <p class="decor">Software Engineer</p>
+            <p class="decor"><a href="https://shikimori.one/KapToIIIe4Ka">Japanese's animation lover</a></p>
         </section>
         <section class="decor">
-            <h3>Maybe something else will appear here soon!</h3>
+            <h3>What I do now?</h3>
+            <p class="decor">Reading and solving SiCP</p>
+            <p class="decor">Cracking algorithms and data structures</p>
+            <!--<p class="decor">Работаю в Гринатоме</p>-->
         </section>
+
     </main>
-    <aside class="decor">
-        <figure>
-            <img src="/assets/defaultFumo.png" alt="picture of fumo" id="fumoImage">
-            <figcaption>
-                Random picture of cute Fumo
-            </figcaption>
-        </figure>
+    <aside>
+        <section class="decor">
+            <h3>Something else?</h3>
+            <p class="decor">I drink a lot of tea</p>
+            <p class="decor">I listen to a lot of music and love high-end audio equipment</p>
+            <!--<p class="decor">С недавних пор не играю в игры (ну или совсем чуточку)</p> -->
+        </section>
+        <footer class="decor">
+            <h3>Attention!</h3>
+            <p>
+                That's the page for friends! With all business you can reach me <a href="-">here</a>!
+            </p>
+        </footer>
     </aside>
 </div>
-<footer>
-    <p>
-        <a href="https://github.com/lokot0k?tab=repositories">My repos.</a> Feel free to contribute!
-    </p>
-</footer>
-<script src="/js/themeChanger.js"></script>
-<script src="/js/contentSet.js"></script>
 </body>
 </html>
